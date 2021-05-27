@@ -21,6 +21,7 @@ import qualified Duckling.Numeral.JA.Rules as Numeral
 import qualified Duckling.Ordinal.JA.Rules as Ordinal
 import qualified Duckling.Temperature.JA.Rules as Temperature
 import qualified Duckling.TimeGrain.JA.Rules as TimeGrain
+import qualified Duckling.Time.JA.Rules as Time
 
 defaultRules :: Seal Dimension -> [Rule]
 defaultRules = langRules
@@ -41,7 +42,7 @@ langRules (Seal PhoneNumber) = []
 langRules (Seal Quantity) = []
 langRules (Seal RegexMatch) = []
 langRules (Seal Temperature) = Temperature.rules
-langRules (Seal Time) = []
+langRules (Seal Time) = Time.rules
 langRules (Seal TimeGrain) = TimeGrain.rules
 langRules (Seal Url) = []
 langRules (Seal Volume) = []
