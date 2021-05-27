@@ -29,13 +29,17 @@ corpus = (testContext, testOptions, allExamples)
 
 allExamples :: [Example]
 allExamples = concat
+-- today
   [ examples (datetime (2013, 2, 12, 0, 0, 0) Day)
-             [ "today"
+             [ "今日"
+        
              ]
+  -- yesterday
   , examples (datetime (2013, 2, 11, 0, 0, 0) Day)
-             [ "yesterday"
+             [ "昨日"
              ]
+  -- tomorrow
   , examples (datetime (2013, 2, 13, 0, 0, 0) Day)
-             [ "tomorrow"
+             [ "明日"
              ]
   ]
