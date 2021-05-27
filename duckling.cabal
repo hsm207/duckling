@@ -741,6 +741,8 @@ library
                      , Duckling.Time.HU.Rules
                      , Duckling.Time.IT.Corpus
                      , Duckling.Time.IT.Rules
+                     , Duckling.Time.JA.Corpus
+                     , Duckling.Time.JA.Rules
                      , Duckling.Time.KA.Corpus
                      , Duckling.Time.KA.Rules
                      , Duckling.Time.KO.Corpus
