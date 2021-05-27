@@ -49,7 +49,16 @@ ruleHHMM = Rule
       _ -> Nothing
   }
 
+ruleInstants :: [Rule]
+ruleInstants = mkRuleInstants
+  [ 
+    ( "today"           , TG.Day   ,  0, "今日" )
+  , ( "tomorrow"        , TG.Day   ,  1, "明日" )
+  , ( "yesterday"       , TG.Day   , -1, "昨日" )
+  ]
+
 rules :: [Rule]
 rules =
   [ ruleHHMM
   ]
+  ++ ruleInstants
